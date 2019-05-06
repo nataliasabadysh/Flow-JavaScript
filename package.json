@@ -1,0 +1,27 @@
+{
+    "name": "flow-javascript",
+    "version": "0.0.1",
+    "license": "MIT",
+    "scripts": {
+        "flow": "flow",
+        "build": "babel src -d dist ",
+        "compile": "run-s build copyfiles",
+        "serve": "serve -d dist",
+        "copyfiles": "copyfiles -f ./static/*.* ./dist"
+    },
+    "devDependencies": {
+        "@babel/preset-flow": "^7.0.0",
+        "@lectrum/eslint-config-core": "1.1.15",
+        "babel-eslint": "10.0.1",
+        "copyfiles": "2.1.0",
+        "eslint": "5.15.3",
+        "serve": "10.1.2"
+    },
+    "dependencies": {
+        "@babel/cli": "^7.4.4",
+        "@babel/core": "^7.4.4",
+        "@babel/preset-env": "^7.4.4",
+        "flow-bin": "^0.98.0",
+        "npm-run-all": "^4.1.5"
+    }
+}
